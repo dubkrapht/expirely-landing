@@ -1,0 +1,233 @@
+
+<html></html>
+<head>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.3/jquery.min.js"></script>
+</head>
+<body class="onepage">
+  <section class="section vertical" id="section-1">
+    <div>
+      <h1>Welcome to Expirely</h1>
+      <!-- <svg class="svg" xmlns="http://www.w3.org/2000/svg" width="300" height="300" viewbox="0 0 32 32">
+        <path d="M12 20l4-2 14-14-2-2-14 14-2 4zm-2.959 7.097c-.989-2.085-2.052-3.149-4.137-4.137l3.097-8.525 4-2.435 12-12h-6l-12 12-6 20 20-6 12-12v-6l-12 12-2.435 4z" fill="#ffc7c7"></path>
+      </svg>         -->
+      <p>Stand by for further information</p>
+    </div>
+  </section>
+      
+  <!-- <section class="section vertical" id="section-2">
+    <div>
+      <h2>A second section</h2>        
+      <svg class="svg" xmlns="http://www.w3.org/2000/svg" width="300" height="300" viewbox="0 0 32 32">
+        <path d="M22.423 0c-5.274 8.718-9.447 4.431-15.55 10.701-5.386 5.533-3.518 12.197 1.016 14.492 4.476-2.287 9.055-7.401 12.452-14.804 0 0 3.052 9.348-6.297 18.355 4.54 5.317 12.245 1.618 14.398-6.841 2.341-9.196-3.762-18.559-6.019-21.903zm-19.391 30.195c.004.091.107 1.805 2.355 1.805 1.636 0 9.932-4.521 14.196-16.256-6.451 11.413-15.816 14.245-16.551 14.451z" fill="#a163cc"></path>
+      </svg>        
+      <p>Intermediate section...</p>
+    </div>
+  </section>    
+      
+  <section class="section vertical" id="section-3">
+    <div>
+      <h2>A third section</h2>        
+      <svg class="svg" xmlns="http://www.w3.org/2000/svg" width="300" height="300" viewbox="0 0 32 32">
+        <path d="M14.533 19.422l-10.578-10.578c-5.273 6.086-5.273 15.07 0 21.156l10.578-10.578zm1.467-1.422v-18c-4.906.305-9.328 2.18-12.897 5.102l12.897 12.898zm2.002-13.984v14.812l-10.383 10.383c2.328 1.711 5.133 2.789 8.235 2.789 7.818 0 14.146-6.328 14.146-14.133 0-7.078-5.227-12.812-11.998-13.851z" fill="#cbffc7"></path>
+      </svg>        
+      <p>Congratulations, you managed without incident until the last level!</p>
+    </div>
+  </section>     -->
+      
+  <!-- <nav class="main-nav"><a href="#section-1">Section 1</a>      <a href="#section-2">Section 2</a>      <a href="#section-3">Section 3</a></nav> -->
+</body>
+
+<style>
+  .onepage .section {
+  box-sizing: border-box;
+  min-height: 100vh;
+  margin: 0;
+  padding: 1rem 2rem;
+}
+.onepage .section:nth-child(3n+1) {
+  color: #ffc7c7;
+  background-color: #ba5959;
+}
+.onepage .section:nth-child(3n+1) * {
+  color: #ffc7c7;
+  fill: #ffc7c7;
+}
+.onepage .section:nth-child(3n+2) {
+  color: #F5F7DC;
+  background-color: #5198e6;
+}
+.onepage .section:nth-child(3n+2) * {
+  color: #F5F7DC;
+  fill: #F5F7DC;
+}
+.onepage .section:nth-child(3n+3) {
+  color: #cbffc7;
+  background-color: #61ba59;
+}
+.onepage .section:nth-child(3n+3) * {
+  color: #cbffc7;
+  fill: #cbffc7;
+}
+.onepage .main-nav {
+  position: fixed;
+  z-index: 4000;
+  display: table;
+  table-layout: fixed;
+  bottom: 0;
+  text-align: center;
+  background: rgba(0,0,0,0.2);
+}
+@media (max-width: 40em) {
+  .onepage .main-nav {
+    width: 100%;
+  }
+}
+@media (min-width: 40em) {
+  .onepage .main-nav {
+    top: 0;
+    right: 0;
+  }
+}
+.onepage .main-nav a {
+  display: table-cell;
+  padding: 1rem;
+  color: #fefefe;
+  text-decoration: none;
+}
+.onepage .main-nav a.active {
+  background-color: rgba(0,0,0,0.3);
+}
+@import url("https://fonts.googleapis.com/css?family=OpenSans");
+html,
+body {
+  box-sizing: border-box;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  color: #fefefe;
+  font-family: 'Open Sans', Arial;
+}
+.vertical {
+  display: table;
+  width: 100%;
+  height: 100%;
+}
+.vertical > * {
+  display: table-cell;
+  vertical-align: middle;
+  text-align: center;
+}
+p {
+  font-size: 1.2rem;
+}
+h1,
+.h1 {
+  margin-top: 1.6rem;
+  margin-bottom: 0.8rem;
+  font-size: 3.2rem;
+}
+h2,
+.h2 {
+  margin-top: 1.4rem;
+  margin-bottom: 0.7rem;
+  font-size: 2.8rem;
+}
+@media (max-width: 40em) {
+  p {
+    font-size: 6vmin;
+  }
+  h1,
+  .h1 {
+    font-size: 9.6vmin;
+  }
+  h2,
+  .h2 {
+    font-size: 7.6vmin;
+  }
+}
+.svg {
+  display: block;
+  margin: 5vh auto 0;
+  width: 100%;
+  height: 100%;
+  max-width: 30wh;
+  max-height: 30vh;
+}
+</style>
+
+<script>
+
+// BEGIN One Page
+var $doc = $(document),
+    $sections = $('.section'),
+    $menu = $('.main-nav a'),
+    $body = $('html,body');
+
+var topToIndex = function(scrollTop) {
+  var offsetTop = 0,
+      indexlastSection;
+  $sections.each(function(i){
+    offsetTop = $(this).offset().top;
+    if ( scrollTop > offsetTop - 100 ) {
+    	indexlastSection = i;
+    }
+  })
+  return indexlastSection;
+}
+
+var retrieveActive = function() {
+  var scrollTop = $doc.scrollTop(),
+      activeIndex = topToIndex(scrollTop);
+  $('#debug').text( scrollTop )
+  
+  $sections.removeClass('active').eq(activeIndex).addClass('active')
+  $menu.removeClass('active').eq(activeIndex).addClass('active')
+  
+  return activeIndex;
+}
+
+$doc.keydown(function(e) {
+  e.preventDefault()
+
+  var $active = $sections.filter('.active'),
+      $prev = $active.prev('.section'),
+      $next = $active.next('.section');
+  
+	if (e.keyCode == 37 || e.keyCode == 38) { // Arrow left or up
+		$body.animate({
+			scrollTop: $prev.length ? $prev.offset().top : $active.offset().top
+		}, 400);
+	}
+	if (e.keyCode == 39 || e.keyCode == 40) { // Arrow right or down
+		$body.animate({
+			scrollTop: $next.length ? $next.offset().top : $active.offset().top
+		}, 400);
+	}
+});
+// END One Page
+
+/*
+$('body').append('<div id ="debug" style="position:fixed;top:0;left:0;background:#0f0;" />')
+$doc.on('scroll', function() {
+  retrieveActive()
+})
+retrieveActive()
+*/
+
+// @link https://css-tricks.com/snippets/jquery/smooth-scrolling/
+$(function() {
+  $('a[href*="#"]:not([href="#"])').click(function() {
+    if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
+      var target = $(this.hash);
+      target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
+      if (target.length) {
+        $body.animate({
+          scrollTop: target.offset().top
+        }, 400);
+        return false;
+      }
+    }
+  });
+});
+
+</script>
